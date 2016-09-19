@@ -2,7 +2,8 @@
 
 ## Introduction
 
-Sort service is a server application that receives a receives a web clients requests, which send a list of books through a xml file containing some attributes such as Title, Author and Edition Year. 
+Sort service is a server application that receives a receives a web clients requests, which send a list of books through a xml file containing some attributes such as Title, Author and Edition Year.
+This in turn sorts the books following some criterias such as Priorite Order of Attributes, Ascending and Descending. Then the result it is shown to the user through the Web Page of Sort Service.
 
 ## Requirements
 

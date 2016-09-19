@@ -160,7 +160,7 @@ Configure the Sort Rules.
 
 #### Check the "Sorting result" Field with the result sort of books.
 
-**By Erick Rafael**
+### By Erick Rafael
  
 [//]: # (Links References used in the body MarkDown)
 [Github Page]: <https://github.com/erk360/JAVA>

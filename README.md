@@ -137,7 +137,7 @@ Done, Sort Service is running correctly.
 
 ## Client Test
 
-Go to the Sort Service [repository] (downloaded previously) and copy the Books.xml to the user main directory.
+Go to the Sort Service repository (downloaded previously) and copy the Books.xml to the user main directory.
 
 >`Example: /home/user/downloads/SortService/Test/Books.xml`
 
@@ -164,4 +164,3 @@ Configure the Sort Rules.
  
 [//]: # (Links References used in the body MarkDown)
 [Github Page]: <https://github.com/erk360/SortService>
-[repository]: <https://github.com/erk360/SortService>

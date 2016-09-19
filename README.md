@@ -101,7 +101,7 @@ Clone the sort service repository (Can you download into the [Github Page] or cl
 > Enter your preferred directory and type the following command...
 
 ```
-$ git clone https://github.com/erk360/JAVA.git
+$ git clone https://github.com/erk360/SortService.git
 
 ```
 
@@ -163,5 +163,5 @@ Configure the Sort Rules.
 ### By Erick Rafael
  
 [//]: # (Links References used in the body MarkDown)
-[Github Page]: <https://github.com/erk360/JAVA>
-[repository]: <https://github.com/erk360/JAVA>
+[Github Page]: <https://github.com/erk360/SortService>
+[repository]: <https://github.com/erk360/SortService>

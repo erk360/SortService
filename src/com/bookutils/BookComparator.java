@@ -1,12 +1,26 @@
 package com.bookutils;
-
+/* 	
+* 	Sort Service 1.0
+*	Created 18/09/2016
+*	By Erick Rafael
+*/
 import java.util.Comparator;
+
+/* 
+ * This class generates a comparator object of type Comparator<Book>, based on the priority 
+ * order of attributes and calls the respective method responsible for to sort the books 
+ * respecting the defined rules.
+ * 
+ * The comparison object is then passed to the method "Collections.sort()" in order to sort
+ * the Books.
+ * 
+ * Returns a Comparator<Book>
+ */
 
 public class BookComparator {
 
 	private Options options=null;	
 	private Comparator<Book> sortComparator;
-
 	
 	public BookComparator(Options options){		
 		this.options=options;

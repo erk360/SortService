@@ -1,4 +1,9 @@
 package com.sortingservice;
+/* 	
+* 	Sort Service 1.0
+*	Created 18/09/2016
+*	By Erick Rafael
+*/
 
 public class SortServiceException extends Exception {
     public SortServiceException () {

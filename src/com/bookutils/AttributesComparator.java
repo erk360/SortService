@@ -1,4 +1,25 @@
 package com.bookutils;
+/* 	
+* 	Sort Service 1.0
+*	Created 18/09/2016
+*	By Erick Rafael
+*/
+
+/* 
+ * This class generates the comparison methods to any two books, based on the rules and 
+ * attributes priority .
+ * 
+ * In each one, the method compare the two books using the chosen attribute and if 
+ * they are different, it returns -1 or 1 (less than and greater than, respectively) to
+ * the sort method and if they are equal, it returns 0 and the comparator continues and 
+ * check if there is another attribute.
+ * 
+ * Depending on the attribute order, the result comparison is multiplied by "1" case 
+ * Ascending Order or "-1" case Descending, through the "options.OrderAuthor()" method
+ * in order to invert the result.
+ * 
+ * Returns a Int Value
+ */
 
 public final class AttributesComparator {
 

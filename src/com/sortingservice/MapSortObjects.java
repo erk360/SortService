@@ -1,5 +1,9 @@
 package com.sortingservice;
-
+/* 	
+* 	Sort Service 1.0
+*	Created 18/09/2016
+*	By Erick Rafael
+*/
 import java.io.ByteArrayInputStream;
 import java.io.File;
 import java.io.IOException;
@@ -19,6 +23,11 @@ import com.bookutils.Books;
 import com.bookutils.Options;
 import com.bookutils.SortAttributes;
 
+/* 
+ * This class handle the files and data inputs of HTML Form, generating the respective objects
+ * for to be used by Sort Service Class.
+ * 
+ */
 
 public class MapSortObjects {
 	
@@ -29,6 +38,7 @@ public class MapSortObjects {
 		this.options=this.mapToOption(inputItems);		
 	}
 	
+	// This method iterates the HTML FormData and assigns the values to respective objects
 	private Options mapToOption(List<FileItem> listItem) throws Exception {
 		this.options=new Options();
 		
@@ -55,7 +65,9 @@ public class MapSortObjects {
 		}
 		return this.options;
 	}
-		
+
+	// This method checks if the path 
+	// [Tomcat Webapps Directory]/WebContent/WEB-INF/Upload exists. Case no, it creates.
 	private String checkUploadDir() throws IOException, URISyntaxException {	
 		
 		String currDir = (Paths.get(this.getClass().getClassLoader().getResource("").toURI()).getParent())+"/Upload";		
@@ -74,9 +86,12 @@ public class MapSortObjects {
 		if(xmlString.length()<50)
 			throw new SortServiceException("There is no Books to compare in this file!");
 		
+		// XML inputs with "&" are not accept like valid XML, throwing a XML Exception.
+		// For to fix it, these types of character must be escaped, replacing meta strings "&" to "&amp;" 
 		InputStream inputStreamXML = new ByteArrayInputStream(xmlString.replaceAll("&", "&amp;").getBytes(Charset.forName("UTF-8")));
 				
 		try {
+			// Mapping xml file to Books object.
 			JAXBContext jaxbContext = JAXBContext.newInstance(Books.class);
 			Unmarshaller jaxbUnmarshaller = jaxbContext.createUnmarshaller();
 		    this.books= (Books)jaxbUnmarshaller.unmarshal( inputStreamXML ); 

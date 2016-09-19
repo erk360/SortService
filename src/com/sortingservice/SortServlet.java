@@ -1,13 +1,13 @@
 package com.sortingservice;
-
-import java.io.File;
+/* 	
+* 	Sort Service 1.0
+*	Created 18/09/2016
+*	By Erick Rafael
+*/
 import java.io.IOException;
-import java.nio.file.Path;
-import java.nio.file.Paths;
 import java.util.List;
 
 import javax.servlet.ServletException;
-
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -22,31 +22,25 @@ import org.json.JSONObject;
 import com.bookutils.Books;
 import com.bookutils.Options;
 
+
 /**
- * Servlet implementation class SortServlet
+ * This class handle HTML Form containing the a rules sort selected 
+ * by user, more the data XML File with the book list. 
+ * Finally it response to browser client the sort result.
  */
 
 public class SortServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
-    /**
-     * @see HttpServlet#HttpServlet()
-     */
     public SortServlet() {
         super();
-        // TODO Auto-generated constructor stub
     }
 
-	/**
-	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
-	 */
-	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-
-	}
-
-	/**
-	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
-	 */
+//  Receives a client request with the HTML Form, map XML Data to Object Books
+//  and Rules to Options Object.
+//  Send the mapped objects to Sort Service, which sorts the books based on
+//  the rules selected by use final user.
+    
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
 		boolean isMultipart = ServletFileUpload.isMultipartContent(request);
@@ -86,6 +80,11 @@ public class SortServlet extends HttpServlet {
 			e.printStackTrace();
 		}
 			
+	}
+	
+	
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+
 	}
 	
 }

@@ -147,7 +147,7 @@ Open your preferred web browser and type the url...
 http://[IP Address]:[Tomcat Port]/SortService/index.jsp
 ```
 
->`Example: http://localhost/SortService/index.jsp`
+>`Example: http://localhost:8080/SortService/index.jsp`
 
 
 Configure the Sort Rules.

@@ -142,6 +142,36 @@ Go to the Sort Service repository (downloaded previously) and copy the Books.xml
 
 >`Example: /home/user/downloads/SortService/Test/Books.xml`
 
+```xml
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<books>
+	<book>
+		<id>1</id>
+		<title>Java How to Program</title>
+		<author>Deitel & Deitel</author>
+		<editionYear>2007</editionYear>
+	</book>
+	<book>
+		<id>2</id>
+		<title>Patterns of Enterprise Application Architecture</title>
+		<author>Martin Fowler</author>
+		<editionYear>2002</editionYear>
+	</book>
+	<book>
+		<id>3</id>
+		<title>Head First Design Patterns</title>
+		<author>Elisabeth Freeman</author>
+		<editionYear>2004</editionYear>
+	</book>
+	<book>
+		<id>4</id>
+		<title>Internet E World Wide Web: How to Program</title>
+		<author>Deitel & Deitel</author>
+		<editionYear>2007</editionYear>
+	</book>
+</books>
+```
+
 Open your preferred web browser and type the url...
 
 ```

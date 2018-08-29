@@ -1,4 +1,4 @@
-# Sort Service Technical Assessment (StormTech)
+# Sort Service Technical Assessment
 
 ## Introduction
 
